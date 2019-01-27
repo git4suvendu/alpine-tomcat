@@ -21,3 +21,17 @@ docker push 717949064245.dkr.ecr.eu-west-2.amazonaws.com/alpine-tomcat:v1
 
 
 docker tag alpine-tomcat:latest dockersuvendu/alpine-tomcat:1.0
+docker push dockersuvendu/alpine-tomcat:1.0
+
+
+git push origin master
+ssh -T git@github.com
+git log
+git status
+git commit -m "commands"
+git add .
+git add "Dockerfile"
+git pull origin master
+git remote add origin "https://github.com/git4suvendu/alpine-tomcat.git"
+git init
+git login
